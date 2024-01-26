@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 /**
  * First parameter is the html tag
  * second parameter is the attributes to that tag
