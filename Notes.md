@@ -81,6 +81,35 @@
         - "build": "parcel build index.html"   
         - Now you can run `npm run start` or `npm run build` => it will do the same thing      
         - `npm run start` or `npm start` both are same.
+
+    - Now Start from scratch `lay the foundation`
+        -   * React way of writing code to create `h1` element
+            * The code looks ugly right
+            * and also its very difficult to create h1 tag compared to HTML h1 tag creation
+            * Hence the concept of JSX comes into picture
+            * JSX is JS extension for creating react element
+            * JSX is diff and React is diff both are not same    
+        - `JSX` is a convention where you can merge these `HTML` and `JS` together.
+        - `JSX` is not HTML in JS, its `HTML` like or `XML` like syntax
+        - `JSX` is a syntax and `React Element` is an object.
+        - `JSX` is transpiled before it reaches JS engine and `Parcel` - `Babel` does that for you.
+        - `BABEL`
+            - `Babel` is a JS package
+            - `Babel` is installed by `Parcel`
+            - `babel` converts the JSX code quickly that react can understand
+            - `babel` is `transpiling` our code
+            - `babel` is a JS compiler.
+            - babeljs.io
+        - `JSX` element converted into `core react` element and `core react` element gives js object which browser can understand.
+        -  `JSX` code is getting converted by `babel` to `Browser-compatible JS code`
+        -  `JSX` uses camel case for its attributes
+        -  Read more about JSX attributes of all elements
+        - If you are writing `JSX` in multiple lines, then wrap it inside (), because `babel` should understand starting and ending points of your `JSX`
+        -  `babel` transpiles `JSX` to `core react` code. 
+
+
+
+
         
 
  
