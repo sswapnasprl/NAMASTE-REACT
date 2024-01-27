@@ -106,6 +106,48 @@
         -  Read more about JSX attributes of all elements
         - If you are writing `JSX` in multiple lines, then wrap it inside (), because `babel` should understand starting and ending points of your `JSX`
         -  `babel` transpiles `JSX` to `core react` code. 
+    - React Components
+        - everything is a `component` in `react`
+        - There are `2` types of components in `react`
+            - `Class based` component - `OLD`
+            - `Functional based` component - `NEW`
+        - What is `React Functional Component`?
+            - its just a JS function which returns some `JSX` element
+            - `Any component name it with a Capital letter otherwise you'll get an error`.
+        - Component Composition
+            - Component inside another component is called `Component Composition`
+        - `Writing JS inside JSX is the most powerful thing.`    
+        - You can inject any JS inside `JSX` => In an component inside `{}` you can write any JS code 
+        - You can put react element inside component by `{}`   
+        - You can use a `react element` inside `react element` , You can use `react element` inside `functional component` , you can use `functional component` inside `element`, You can put `component` inside `component`.
+        - `JSX` takes care of `injection attacks`[For e.g: you are calling some API and an attacker injects something into that API and tries to execute it, `JSX` will take care of it.]
+        - `Cross site scripting`
+        - `JSX` escapes malicious data, assume it sanitizes the data 😎
+        - `<Component />` and `<Component></Component>`, `{ Component() }` all are same
+        - You can call `Functional Component` inside `{}` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
