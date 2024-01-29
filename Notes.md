@@ -125,6 +125,8 @@
         - `JSX` escapes malicious data, assume it sanitizes the data 😎
         - `<Component />` and `<Component></Component>`, `{ Component() }` all are same
         - You can call `Functional Component` inside `{}` 
+- Episode 4
+            
 
 
 
