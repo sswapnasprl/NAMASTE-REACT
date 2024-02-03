@@ -126,7 +126,12 @@
         - `<Component />` and `<Component></Component>`, `{ Component() }` all are same
         - You can call `Functional Component` inside `{}` 
 - Episode 4
-            
+    Part -2
+        - PROPS
+        - `Passing props to an function is just like passing arguments to an function`   
+        - Passing props to an component ===> Passing properties to the function.
+        - DeStructuting PROPS : Instead of `PROPS` directly use the parameters as arguments.
+        - `Config Driven UI` -      
 
 
 
