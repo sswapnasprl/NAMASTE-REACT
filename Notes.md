@@ -131,7 +131,41 @@
         - `Passing props to an function is just like passing arguments to an function`   
         - Passing props to an component ===> Passing properties to the function.
         - DeStructuting PROPS : Instead of `PROPS` directly use the parameters as arguments.
-        - `Config Driven UI` -      
+        - `Config Driven UI` - 
+- Episode 5
+    - `HOOKS`
+        - Read more about `React file structure`
+        - `.js` or `.jsx` hardly matters, use whatever you want
+        - export first, import next
+        - while importing its optional to keep .extension to file name, by default React treats it as JSs
+        - `utils` means utilities that can be used anywhere in your project.
+        -  There are two ways of exporting file.
+            1. default export `export default <name of variable> or component_name` [`import component from "path" `]
+            2. named export [`export const component_name or variable_name` [`import {component} from "path" `]]
+        - But in one file you can have only one default export.  
+        - For named exports, while importing use curly baces {}
+        -  When you have to export multiple things, use named export
+        - `Can I use default export along with named export` ?????????????????????????????
+
+    `HOOKS`
+        - To make DATA and UI layer consistent to each other
+        - When you change data your UI wont get updated by default
+
+        ******************************************************************************************************
+        - So `to give super powers to your normal JS variable you use "state variable" which is SUPER POWERFUL VARIABLE, for that you use HOOKS`
+        *******************************************************************************************************  
+        - They are normal JS utility functions written by Facebook developers, they wrote inside React.
+        - 2 imp hooks
+            1. useState() - to generate super powerful state variables
+            2. useEffect()   
+        - Whenever a state variable updates/changes, react re-renders the component.
+        - Read More about below
+            - React Fibre (go ti acdlite link and read)
+            - React is doing efficient DOM manipulation
+            - Virtual DOM
+            - Reconsilation
+
+
 
 
 
