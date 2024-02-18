@@ -27,16 +27,22 @@
     margin:5px;
     width: 200px;     
     padding:5px;
+    background-color: #f0f0f0;
 }
 
 .res-card:hover {
-    border: 1px solid pink;
+    border: 1px solid black;
     cursor: pointer;
 }
 
 .search {
-    padding: 10px;
+    padding: 5px;
 }
+
+.search:hover {
+    background-color: aquamarine;
+}
+
 .res-logo {
     width: 100%;
 }
@@ -49,4 +55,29 @@
 
 .filter-btn:hover {
     background-color: #04AA6D;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    margin: 20px;
+    background-color: #f0f0f0;
+    height:400px;
+    width:200px;
+}
+
+.login {
+    cursor: pointer;
+    background-color: #f0f0f0;    
+}
+
+.login:hover {
+    background-color: aqua;
+}
+
+.serach_box {
+    margin: 5px;
 }

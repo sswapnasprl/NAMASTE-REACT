@@ -163,7 +163,37 @@
             - React Fibre (go ti acdlite link and read)
             - React is doing efficient DOM manipulation
             - Virtual DOM
-            - Reconsilation
+            - Reconciliation
+
+- Episode 6
+    - Monolith Architecture
+    - Microservice Architecture
+        - Separation of concerns
+        - Single responsibility principle
+    - useEffect hook
+        - it takes two arguments
+            1. A call back Function
+            2. Dependency array
+        - As soon as the component renders, the callback function will be called and it again rerenders the component based on the dependency array
+        - So if you need anything that needs to rerender then use useEffect.
+        - As soon as the body loads, useEffect will be called.
+    - `CORS policy` (Cross Origin Resource Sharinghy)
+        - Our browsers doesnt allow us to call one API from one Origin to another Origin
+        - If there is a Origin mismatch the browser blocks that API call
+        - That is a CORS policy
+        - to bypass this use CORS extension of browser and enable it.
+    - `Shimmer UI`
+    -  `Conditional Rendering` - Rendering based on the condition 
+    - Whenever you change local state variable, react re-renders the component
+    - Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
+    - DOM manipulation is very expensive and React is doing it very efficiently
+      
+- Episode 6.2
+    - corsproxy.io
+- Episode 7
+    -     
+
+
 
 
 
