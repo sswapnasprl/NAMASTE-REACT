@@ -191,7 +191,37 @@
 - Episode 6.2
     - corsproxy.io
 - Episode 7
-    -     
+    - Dive deep into `useEffect()`
+        - Named import from `React`
+        - `useEffect(() => {}, []) 
+        - Dependency array [] is optional.
+            - Every time component renders, useEffect is called by default.
+            - if no dependency, useEffect is called on every render
+            - if dependency array is empty = [], then useEffect is called on initial render only once
+            - if the dependency array is `for ex btnNameReact` then useEffect is called when the `btnNameReact` is updated.
+    - Dive deep into `useState()`
+        - Never create `useState` outside of your component, because its a local state variable inside your functional component
+        - Try to call this  useState on the top or higher level.
+        - Because JS is a `Synchronous Single Threaded language`
+        - Never create useState inside a condition if-else, for-loop, functions().
+    - Routing
+        - `react router dom` library
+        - `To create a component => shortcut way rafce`
+        - use `react-router-dom` library
+        - Routing configuration
+            1. createBrowserRouter - it will create a routing configuration for us [Configuration means the information that will define what will happen on a specific route]
+            2. RouterProvider - Provides the routing configuration to our app
+            3. useRouteError  - its a hook, it gives more info about error.
+        - Children Routes
+        - Outlet
+        - Link is the react way of configuring re-directions. similar to anchor tag.
+        - Client-side routing    
+        - React is a `single page applications`
+            - 2 types of routings in web application
+                1. client side routing - fetching about component and displaying
+                2. server side routing - fetching about.html from server and routing  
+        - Dynamic routing
+            -               
 
 
 
