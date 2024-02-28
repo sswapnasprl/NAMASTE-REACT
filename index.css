@@ -81,3 +81,29 @@
 .serach_box {
     margin: 5px;
 }
+
+.user-card {
+    padding: 10px;
+    border:1px solid black;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.user-card > figure {
+    margin: 0;
+}
+
+.user-card > address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-style:normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.user-card:hover {
+    background-color: gainsboro;
+}
+
