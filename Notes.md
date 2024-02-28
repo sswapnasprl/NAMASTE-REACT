@@ -1,5 +1,7 @@
 # Namaste React 🕵️‍♀️
 
+SPA - Single Page Application
+
 - Episode 1
     Push the first episode practice to git hub
     1. Make the existing application to git (git init  ----> This makes the existing application as git repository)
@@ -221,7 +223,39 @@
                 1. client side routing - fetching about component and displaying
                 2. server side routing - fetching about.html from server and routing  
         - Dynamic routing
-            -               
+            - 
+- Episode 8
+    - Class based components
+    - Life Cycle Methods
+        - Loading / Mounting both are same
+        - `ComponentDidMount` is used to make API calls 
+            - *********************** `Y because, We need to render the component first and load the DOM, then make an API call and rerender the component again, this way We no need to wait for the API to load the data.` ***********************
+        - LifeCycle flow
+            1. Parent Constructor
+            2. Parent Render
+            3. Child Constructor
+            4. Child Render
+            5. Child Component Did Mount
+            6. Parent Component Did Mount
+        - ComponentDidMount and UseEffect are similar, both are used to call API
+        - Why because we need to load the DOM elements first and then call the API to fetch the data and rerender the component.
+        - React Life Cycle Diagram 
+            - `https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/`
+            - When the react component is mounted, it is mounted in two phases
+                1. Render Phase (constructor and render)
+                2. Commit Phase (then react updates the DOM, then the component did mount is called)
+
+                DOM manipulation is very expensive task thats why it batches up all first Render phase of your parent child components and then go to the second Phase which is commit phase
+            - Never ever compare `react lifecycle method` to functional component
+            - `ComponentDidMount` and `UseEffect` are not similar.
+            - ComponentDidMount - To call API
+            - ComponentDidUpdate - its like based on dependency array if you want to update something, e.g: if(this.state.count!=== prevState.count){ // then do something... }
+            - ComponentWillUnmount - Cleanup if any
+
+
+
+
+
 
 
 
