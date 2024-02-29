@@ -23,6 +23,11 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.res-container-link{
+    text-decoration: none;
+}
+
 .res-card {
     margin:5px;
     width: 200px;     
@@ -107,3 +112,28 @@
     background-color: gainsboro;
 }
 
+.menu-img {
+    height: 30%;
+    width: 30%;    
+}
+
+.menu-img:hover{
+    border: 1px solid grey;
+}
+
+.rest-menucard > li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap:16px;
+}
+
+.rest-menucard-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rest-menucard-details-info {
+    color : rgba(40,44,63,.45);
+}
