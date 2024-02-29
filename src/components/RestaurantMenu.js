@@ -1,22 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
-import { json, useParams } from "react-router-dom";
-import { MENU_API } from "../utils/constants";
+import { useParams } from "react-router-dom";
+import useRestaurantCard from "../utils/useRestaurantCard";
+import { CDN_URL } from "../utils/constants";
 
 function RestaurantMenu() {
-  const [resInfo, setResInfo] = useState(null);
   const { resId } = useParams();
-
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-
-  const fetchMenu = async () => {
-    const data = await fetch(MENU_API + resId);
-    const json = await data.json();
-    setResInfo(json.data);
-    console.log(json.data);
-  };
+  const resInfo = useRestaurantCard(resId);
 
   if (resInfo === null) return <Shimmer />;
 
@@ -28,22 +18,36 @@ function RestaurantMenu() {
   console.log(itemCards);
 
   return (
-    <div>
+    <details>
       <h1>{name}</h1>
       <h2>💸{costForTwoMessage}</h2>
       <h3>{locality}</h3>
       <h3>{cuisines.join(", ")}</h3>
       <h4>⏰ {sla.deliveryTime} min</h4>
       <h4>{avgRating} ✨</h4>
-      <ul>
+      <menu className="rest-menucard">
         {itemCards.map((item) => (
           <li key={item.card.info.id}>
-            {" "}
-            🔊 {item.card.info.name} - 💰 {item.card.info.price / 100}
+            <div className="menu-img">
+              <img
+                className="res-logo"
+                alt="res-logo"
+                src={CDN_URL + item.card.info.imageId}
+              ></img>
+            </div>            
+            {console.log("item.card.info ---> ", item.card.info)}
+            <div className="rest-menucard-details">
+              <span> {item.card.info.isBestseller === true ? " ✔ Best Seller" : " ✖ Best Seller" } &nbsp;  {item.card.info.isVeg === 1 ? "🟢" : "🔴"}
+              </span> 
+              <span> 🔊 {item.card.info.name} </span> 
+              <span> 💰 {item.card.info.price / 100} </span> 
+              <span className="rest-menucard-details-info"> 💛 {item.card.info.description } </span> 
+            </div>
+            
           </li>
         ))}
-      </ul>
-    </div>
+      </menu>
+    </details>
   );
 }
 

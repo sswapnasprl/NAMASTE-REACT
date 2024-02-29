@@ -251,6 +251,23 @@ SPA - Single Page Application
             - ComponentDidMount - To call API
             - ComponentDidUpdate - its like based on dependency array if you want to update something, e.g: if(this.state.count!=== prevState.count){ // then do something... }
             - ComponentWillUnmount - Cleanup if any
+- Episode 9
+    - Single Responsibility Principle
+        - your code will be reusable
+        - your code will be maintainable
+        - your code will be testable
+    - Custom hooks
+    - Chunking
+    - Code splitting
+    - Dynamic bundling
+    - Logical Separation of Bundles  
+    - Lazy loading
+    - On Demand loading
+    - Dynamic Import
+
+- Episode 10
+    - Styles to application
+    
 
 
 
